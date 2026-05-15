@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { existsSync, readFile } from 'fs';
+import { existsSync } from 'fs';
+import { readFile } from 'fs/promises';
 import * as path from 'path';
 
 const ORDERS_DIR = path.join(process.env.HOME || '/Users/julylan', '.hermes', 'vitatech-orders');
